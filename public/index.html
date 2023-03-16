@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href="./style.css">
+    <title>Climatize Vehicle by Postman Academy</title>
+    <link rel="icon" href="https://design.postman.com/static/favicon-c4f19c0874e7bf22fbf9378dffcdfe0e.png">
+  </head>
+  <body>
+    <header>
+      <h2>Climatize Vehicle Demo</h2>
+    </header>
+    <div>
+      <form action="/climatize" method="POST">
+        <fieldset>
+          <h3>Climatize Vehicle Remotely</h3>
+          <label for="vin">VIN</label>
+          <input type="text" id="vin" name="vin" size="30" maxlength="17" required>
+          </br>
+          <label for="temp">Desired temperature</label>
+          <input type="text" id="temp" name="temp" size="30" required>
+          <br/>
+          <button type ="submit">Start</button>
+        </fieldset>
+      </form>
+      <form action="/create" method="POST">
+        <fieldset>
+          <h3>Create New Vehicle</h3>
+          <label for="status">Engine Status (on/off)</label>
+          <input type="text" id="status" name="status" size="30" maxlength="17" required>
+          </br>
+          <label for="temp">Desired temperature</label>
+          <input type="text" id="temp" name="temp" size="30" required>
+          <br/>
+          <button type ="submit">Create Vehicle</button>
+        </fieldset>
+      </form>
+      <form action="/engine" method="POST">
+        <fieldset>
+          <h3>View Engine Status</h3>
+          <label for="vin">VIN</label>
+          <input type="text" id="vin" name="vin" size="30" maxlength="17" required>
+          <br/>
+          <button type ="submit">Get Engine Status</button>
+        </fieldset>
+      </form>
+      <form action="/climate" method="POST">
+        <fieldset>
+          <h3>View Climate Settings</h3>
+          <label for="vin">VIN</label>
+          <input type="text" id="vin" name="vin" size="30" maxlength="17" required>
+          <br/>
+          <button type ="submit">Get Climate Settings</button>
+        </fieldset>
+      </form> 
+      <form action="/engine_status" method="POST">
+        <fieldset>
+          <h3>Turn Engine On/Off</h3>
+          <label for="vin">Engine Status (on/off)</label>
+          <input type="text" id="status" name="status" size="30" maxlength="17" required>
+          <br/>
+          <label for="vin">VIN</label>
+          <input type="text" id="vin" name="vin" size="30" maxlength="17" required>
+          <br/>
+          <button type ="submit">Start</button>
+        </fieldset>
+      </form> 
+      </div>
+    <footer>
+      <hr>
+      <h4>Created by Postman Academy for training purposes.</h4>
+      <a href="https://academy.postman.com/" target="_blank"><img src="./logo.png" alt="Postman Academy. Illustration." width="69" height="70"></a>
+    </footer>
+  </body>
+</html> 
