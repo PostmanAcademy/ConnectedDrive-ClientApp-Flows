@@ -168,5 +168,5 @@ app.post('/engine_status', async(req,res) => {
 });
 
 server.listen(PORT, () => { 
-    console.log("Server listening on port: 3000");
+    console.log("Server listening on port: " + PORT);
 });
